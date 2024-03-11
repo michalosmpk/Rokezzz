@@ -15,3 +15,5 @@ cp auth.json.sample auth.json && vim auth.json
 ```sh
 yarn start
 ```
+
+# 4. Change theme to Rokezzz Bakery in the admin panel
