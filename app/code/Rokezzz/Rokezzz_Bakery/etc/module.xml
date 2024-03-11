@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Rokezzz_Bakery
+ *
+ * @category    Rokezzz
+ * @package     Rokezzz_Bakery
+ * @author      Michał Kaszak <michalosmpk@gmail.com>
+ * @copyright   Copyright (c) 2024 Michał Kaszak
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Module/etc/module.xsd">
+    <module name="Vendor_Module" setup_version="0.0.1">
+        <sequence>
+            <module name="Magento_Theme"/>
+        </sequence>
+    </module>
+</config>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Rokezzz_Bakery
+ *
+ * @category    Rokezzz
+ * @package     Rokezzz_Bakery
+ * @author      Michał Kaszak <michalosmpk@gmail.com>
+ * @copyright   Copyright (c) 2024 Michał Kaszak
+ */
+-->
+
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <update handle="empty"/>
+    <referenceContainer name="page.wrapper">
+        <referenceContainer name="footer-container" htmlClass="Footer"/>
+    </referenceContainer>
+</layout>

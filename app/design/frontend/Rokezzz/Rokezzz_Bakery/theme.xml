@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Rokezzz_Bakery
+ *
+ * @category    Rokezzz
+ * @package     Rokezzz_Bakery
+ * @author      Michał Kaszak <michalosmpk@gmail.com>
+ * @copyright   Copyright (c) 2024 Michał Kaszak
+ */
+-->
+
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/theme.xsd">
+    <title>Rokezzz Bakery</title>
+    <parent>Magento/luma</parent>
+</theme>

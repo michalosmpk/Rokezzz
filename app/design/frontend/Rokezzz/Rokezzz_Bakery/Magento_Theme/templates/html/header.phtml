@@ -1,0 +1,31 @@
+<?php
+/**
+ * Rokezzz_Bakery
+ *
+ * @category    Rokezzz
+ * @package     Rokezzz_Bakery
+ * @author      Michał Kaszak <michalosmpk@gmail.com>
+ * @copyright   Copyright (c) 2024 Michał Kaszak
+ */
+
+$welcomeMessage = $block->getWelcome();
+
+?>
+
+<?php if ($block->getShowPart() == 'welcome'): ?>
+    <script type="text/x-magento-init">
+        {
+            "*": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "customer": {
+                            "component": "Magento_Customer/js/view/customer"
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<?php elseif ($block->getShowPart() == 'other'): ?>
+    <?= $block->getChildHtml() ?>
+<?php endif ?>

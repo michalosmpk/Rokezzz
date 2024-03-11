@@ -1,0 +1,28 @@
+<?php
+/**
+ * Rokezzz_Bakery
+ *
+ * @category    Rokezzz
+ * @package     Rokezzz_Bakery
+ * @author      Michał Kaszak <michalosmpk@gmail.com>
+ * @copyright   Copyright (c) 2024 Michał Kaszak
+ */
+
+$storeName = $block->getThemeName() ? $block->getThemeName() : $block->getLogoAlt();
+
+$logoSizeResolver = $block->getLogoSizeResolver();
+$logoWidth = $logoSizeResolver !== null && $logoSizeResolver->getWidth()
+    ? $logoSizeResolver->getWidth()
+    : $block->getLogoWidth();
+$logoHeight = $logoSizeResolver !== null && $logoSizeResolver->getHeight()
+    ? $logoSizeResolver->getHeight()
+    : $block->getLogoHeight();
+?>
+<a
+    class="Header__LogoLink"
+    href="<?= $block->escapeUrl($block->getUrl('')) ?>"
+    title="<?= $block->escapeHtmlAttr($storeName) ?>"
+    aria-label="store logo"
+>
+    <img src="<?= $block->getViewFileUrl('images/logo.png'); ?>" alt="Bakery" />
+</a>

@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght@400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box !important; }
+
+.page-main {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: unset !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  width: 100% !important; }
+
+.page-header {
+  margin-bottom: 0px;
+  border-bottom: unset; }
+
+.splide {
+  width: 100%; }
+  .splide__slide {
+    width: 100% !important; }
+    .splide__slide img {
+      width: 100%;
+      height: calc(100vh - 164px);
+      object-fit: cover; }
+  .splide__arrow {
+    display: none !important; }
+  .splide__track {
+    height: calc(100vh - 164px); }
+
+.action.showcart:before {
+  content: unset !important; }
+
+.nav-sections {
+  margin-block-end: 0px !important;
+  background: #fff;
+  position: unset !important;
+  top: unset !important;
+  width: 100% !important;
+  overflow: unset; }
+
+.navigation {
+  font-family: 'Josefin Sans';
+  background: #fff !important;
+  padding-block: 12px; }
+  .navigation ul {
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-inline: auto;
+    max-width: max-content;
+    row-gap: 5px; }
+    @media (max-width: 768px) {
+      .navigation ul {
+        padding-inline: 25px;
+        column-gap: 5px; } }
+  .navigation li {
+    margin: 0;
+    border-top: unset !important;
+    border-bottom: unset !important;
+    font-size: 18px !important; }
+    @media (max-width: 768px) {
+      .navigation li {
+        font-size: 15px !important; } }
+    .navigation li a {
+      color: #1c274c !important;
+      padding: 2px 10px !important; }
+
+.minicart-wrapper {
+  margin-top: unset !important; }
+
+.nav-sections-item-title {
+  display: none !important; }
+
+.nav-sections-item-content {
+  margin-left: unset !important;
+  margin-top: unset !important;
+  padding: 0 !important; }
+
+.action .nav-toggle {
+  display: none !important; }
+
+.header.content {
+  padding-block: 15px !important;
+  padding-inline: 25px !important;
+  display: flex !important;
+  justify-content: space-between !important; }
+  .header.content:after, .header.content:before {
+    content: unset !important; }
+
+.logo {
+  margin: unset !important; }
+
+.ContentWrapper {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 40px; }
+  @media (max-width: 768px) {
+    .ContentWrapper {
+      padding-inline: 25px; } }
+
+.footer.content {
+  border-top: unset !important;
+  padding-left: unset;
+  padding-right: unset; }
+
+.copy-custom {
+  background-color: #1c274c;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  font-family: 'Josefin Sans';
+  color: white;
+  font-weight: 350; }
+
+h1,
+h2 {
+  margin-block: unset; }
+
+.Header {
+  color: #1c274c; }
+  .Header__RightSide {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    align-items: center; }
+  .Header__CustomerLink img {
+    width: 32px; }
+  .Header__MinicartImage {
+    width: 32px; }
+  .Header__LogoLink img {
+    max-width: 130px; }
+    @media (max-width: 768px) {
+      .Header__LogoLink img {
+        max-width: 100px; } }
+
+.Hero {
+  position: relative; }
+  .Hero__ContentWrapper {
+    position: absolute;
+    width: 100%;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    top: 0;
+    pointer-events: none; }
+  .Hero__Text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    max-width: max-content;
+    gap: 20px; }
+    @media (max-width: 768px) {
+      .Hero__Text {
+        align-items: center; } }
+    .Hero__TextWrapper {
+      color: white;
+      position: relative;
+      bottom: 10%;
+      right: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      width: 100%;
+      pointer-events: none;
+      padding-inline-start: 40px;
+      font-family: 'Josefin Sans';
+      width: 100%;
+      max-width: 1280px; }
+      @media (max-width: 768px) {
+        .Hero__TextWrapper {
+          text-align: center;
+          right: 0;
+          padding-inline: 25px;
+          width: auto; } }
+    .Hero__TextTop {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 16px;
+      padding-inline: 30px;
+      padding-block: 15px;
+      color: white;
+      font-weight: 400;
+      font-size: 40px;
+      margin-block-end: unset; }
+      @media (max-width: 768px) {
+        .Hero__TextTop {
+          font-size: 30px; } }
+    .Hero__TextBottom {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 16px;
+      padding-inline: 25px;
+      padding-block: 15px;
+      color: white;
+      font-size: 20px;
+      width: 80%;
+      max-width: 600px; }
+      @media (max-width: 768px) {
+        .Hero__TextBottom {
+          width: auto; } }
+
+.About {
+  font-family: 'Josefin Sans';
+  margin-block-start: 240px;
+  font-weight: 350;
+  color: #1c274c; }
+  @media (max-width: 1024px) {
+    .About {
+      margin-block-start: 160px; } }
+  @media (max-width: 768px) {
+    .About {
+      margin-block-start: 80px; } }
+  .About__Grid {
+    display: flex;
+    gap: 140px; }
+    @media (max-width: 1024px) {
+      .About__Grid {
+        gap: 50px; } }
+    @media (max-width: 768px) {
+      .About__Grid {
+        gap: 25vw;
+        flex-direction: column; } }
+    .About__GridLeft {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 30px;
+      justify-content: center;
+      margin-block-end: 100px; }
+      @media (max-width: 768px) {
+        .About__GridLeft {
+          margin-block-end: unset; } }
+    .About__GridRight {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: end; }
+  .About__Title {
+    font-size: 26px;
+    font-weight: 400; }
+  .About__Text {
+    font-size: 20px; }
+  .About__Image {
+    position: relative; }
+    @media (max-width: 1024px) {
+      .About__Image {
+        width: 90%; } }
+    @media (max-width: 768px) {
+      .About__Image {
+        width: 85%; } }
+    .About__Image img {
+      border-radius: 16px;
+      object-fit: cover; }
+    .About__ImageTop {
+      position: absolute;
+      top: -100px;
+      left: -60px;
+      height: 100%;
+      width: 80%;
+      z-index: 10; }
+      @media (max-width: 768px) {
+        .About__ImageTop {
+          top: -20%;
+          left: -18%; } }
+    .About__ImageBottom {
+      position: relative;
+      width: 100%; }
+
+.Contact {
+  font-family: 'Josefin Sans';
+  margin-block-start: 120px;
+  font-weight: 350;
+  color: #1c274c;
+  margin-block-end: 100px; }
+  @media (max-width: 768px) {
+    .Contact {
+      margin-block-start: 60px;
+      margin-block-end: 40px; } }
+  .Contact__Grid {
+    display: flex;
+    gap: 60px; }
+    @media (max-width: 768px) {
+      .Contact__Grid {
+        flex-direction: column;
+        gap: 30px; } }
+    .Contact__GridRight {
+      width: 100%; }
+  .Contact__Title {
+    font-weight: 400;
+    font-size: 26px; }
+  .Contact__Text {
+    font-size: 20px;
+    margin-block-start: 10px; }
+  .Contact__Form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; }
+    @media (max-width: 768px) {
+      .Contact__Form {
+        order: 2; } }
+    .Contact__FormRow {
+      display: flex;
+      gap: 20px;
+      justify-content: center; }
+    .Contact__FormCell {
+      width: 100%;
+      font-weight: 400; }
+      .Contact__FormCell p {
+        font-size: 18px; }
+      .Contact__FormCell input,
+      .Contact__FormCell textarea {
+        border-radius: 4px;
+        font-size: 16px;
+        padding-inline: 15px;
+        padding-block: 10px;
+        height: 38px; }
+        .Contact__FormCell input:focus,
+        .Contact__FormCell textarea:focus {
+          box-shadow: 0 0 1px 1px #1c274c !important; }
+      .Contact__FormCell textarea {
+        resize: none;
+        height: 150px; }
+    .Contact__Form button {
+      padding-inline: 30px;
+      padding-block: 10px;
+      border: 1px solid #c2c2c2;
+      border-radius: 4px;
+      background-color: transparent; }
+      .Contact__Form button:hover {
+        box-shadow: 0 0 1px 1px #1c274c !important; }
+
+.Footer {
+  background-color: #1c274c;
+  font-family: 'Josefin Sans'; }
+  .Footer__List {
+    max-width: 1280px;
+    padding-right: unset !important;
+    padding-inline: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-block: 40px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; }
+    .Footer__List a {
+      font-size: 16px;
+      color: white; }
+  .Footer .footer.content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: unset;
+    padding-left: unset;
+    padding-right: unset;
+    display: flex;
+    justify-content: center; }

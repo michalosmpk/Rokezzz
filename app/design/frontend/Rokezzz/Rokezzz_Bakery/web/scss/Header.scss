@@ -1,0 +1,32 @@
+@import 'Breakpoints.scss';
+
+.Header {
+  color: #1c274c;
+
+  &__RightSide {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__CustomerLink {
+    img {
+      width: 32px;
+    }
+  }
+
+  &__MinicartImage {
+    width: 32px;
+  }
+
+  &__LogoLink {
+    img {
+      max-width: 130px;
+
+      @include mobile {
+        max-width: 100px;
+      }
+    }
+  }
+}

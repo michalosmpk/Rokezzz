@@ -1,0 +1,35 @@
+@import 'Breakpoints.scss';
+
+.Footer {
+  background-color: #1c274c;
+  font-family: 'Josefin Sans';
+
+  &__List {
+    max-width: 1280px;
+    padding-right: unset !important;
+    padding-inline: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-block: 40px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    a {
+      font-size: 16px;
+      color: white;
+    }
+  }
+
+  .footer.content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: unset;
+    padding-left: unset;
+    padding-right: unset;
+    display: flex;
+    justify-content: center;
+  }
+}

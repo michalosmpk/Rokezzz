@@ -1,0 +1,48 @@
+<?php
+/**
+ * Rokezzz_Bakery
+ *
+ * @category    Rokezzz
+ * @package     Rokezzz_Bakery
+ * @author      Michał Kaszak <michalosmpk@gmail.com>
+ * @copyright   Copyright (c) 2024 Michał Kaszak
+ */
+
+?>
+
+<section class="Hero">
+    <div id="splide" class="splide">
+        <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="https://i.imgur.com/ZpxrXMq.jpeg"></li>
+                    <li class="splide__slide"><img src="https://i.imgur.com/EP3oTyr.jpeg"></li>
+                    <li class="splide__slide"><img src="https://i.imgur.com/Y0ycrQE.jpeg"></li>
+                    <li class="splide__slide"><img src="https://i.imgur.com/hCR6Ilp.jpeg"></li>
+                    <li class="splide__slide"><img src="https://i.imgur.com/1vzYAnh.jpeg"></li>
+                </ul>
+        </div>
+    </div>
+    <div class="Hero__ContentWrapper">
+        <div class="Hero__TextWrapper">
+            <div class="Hero__Text">
+                <h1 class="Hero__TextTop">Baking Memories, One Bite at a Time</h1>
+                <div class="Hero__TextBottom">Indulge in the warmth of home-baked delights, where every bite carries the comfort of home.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.6/dist/js/splide.min.js"></script>
+<script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide('#splide', {
+            type: 'loop',
+            perPage: 1,
+            autoplay: true,
+            interval: 5000,
+            updateOnMove: true,
+            pagination: true,
+            throttle: 400,
+        }).mount();
+    });
+</script>

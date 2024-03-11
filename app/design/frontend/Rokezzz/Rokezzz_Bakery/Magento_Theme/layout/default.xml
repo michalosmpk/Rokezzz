@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Rokezzz_Bakery
+ *
+ * @category    Rokezzz
+ * @package     Rokezzz_Bakery
+ * @author      Michał Kaszak <michalosmpk@gmail.com>
+ * @copyright   Copyright (c) 2024 Michał Kaszak
+ */
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- Remove unused blocks -->
+        <referenceContainer name="header.panel.wrapper" remove="true"/>
+        <referenceBlock name="top.search" remove="true"/>
+        <referenceBlock name="currency" remove="true"/>
+        <referenceBlock name="authorization-link-login" remove="true"/>
+        <referenceBlock name="compare-link-wrapper" remove="true"/>
+        <referenceBlock name="customer" remove="true"/>
+        <referenceBlock name="store_language" remove="true"/>
+        <referenceBlock name="store.settings.currency" remove="true"/>
+        <move element="minicart" destination="header-right-side" after="account" />
+
+        <!-- Add custom account block -->
+        <referenceContainer name="header-wrapper">
+            <container name="header-right-side" htmlTag="div" htmlClass="Header__RightSide">
+                <block class="Magento\Framework\View\Element\Template" name="account" template="Magento_Theme::account.phtml" />
+            </container>
+        </referenceContainer>
+
+        <!-- Manipulate footer blocks -->
+        <referenceContainer name="footer">
+            <referenceBlock name="form.subscribe" remove="true" />
+            <referenceBlock name="footer_links" class="Rokezzz\Rokezzz_Bakery\Block\RokezzzLinks" />
+        </referenceContainer>
+    </body>
+</page>

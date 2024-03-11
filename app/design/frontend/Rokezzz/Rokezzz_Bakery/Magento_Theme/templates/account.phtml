@@ -1,0 +1,25 @@
+<?php
+/**
+ * Rokezzz_Bakery
+ *
+ * @category    Rokezzz
+ * @package     Rokezzz_Bakery
+ * @author      Michał Kaszak <michalosmpk@gmail.com>
+ * @copyright   Copyright (c) 2024 Michał Kaszak
+ */
+
+$helper = $this->helper('Rokezzz\Rokezzz_Bakery\Helper\Data');
+
+if ($helper->isLoggedIn()) {
+    $accountUrl = $block->getUrl('customer/account');
+    $accountLabel = $block->getViewFileUrl('images/icons/loggedIn.svg');;
+} else {
+    $accountUrl = $block->getUrl('customer/account/login');
+    $accountLabel = $block->getViewFileUrl('images/icons/loggedOut.svg');;
+}
+
+?>
+
+<a href="<?= $accountUrl ?>" class="Header__CustomerLink">
+    <img src="<?= $accountLabel ?>">
+</a>

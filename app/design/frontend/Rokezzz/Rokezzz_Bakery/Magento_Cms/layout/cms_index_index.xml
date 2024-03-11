@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Rokezzz_Bakery
+ *
+ * @category    Rokezzz
+ * @package     Rokezzz_Bakery
+ * @author      Michał Kaszak <michalosmpk@gmail.com>
+ * @copyright   Copyright (c) 2024 Michał Kaszak
+ */
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <referenceBlock name="page.main.title" remove="true" />
+            <referenceBlock name="cms_page" remove="true" />
+            <block class="Magento\Framework\View\Element\Template" name="hero" template="Magento_Cms::hero.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="about" template="Magento_Cms::about.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="contact" template="Magento_Cms::contact.phtml" />
+        </referenceContainer>
+    </body>
+</page>

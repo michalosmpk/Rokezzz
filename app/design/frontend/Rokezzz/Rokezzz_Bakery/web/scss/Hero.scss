@@ -1,0 +1,81 @@
+@import 'Breakpoints.scss';
+
+.Hero {
+  position: relative;
+
+  &__ContentWrapper {
+    position: absolute;
+    width: 100%;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    top: 0;
+    pointer-events: none;
+  }
+
+  &__Text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    max-width: max-content;
+    gap: 20px;
+
+    @include mobile {
+      align-items: center;
+    }
+
+    &Wrapper {
+      color: white;
+      position: relative;
+      bottom: 10%;
+      right: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      width: 100%;
+      pointer-events: none;
+      padding-inline-start: 40px;
+      font-family: 'Josefin Sans';
+      width: 100%;
+      max-width: 1280px;
+
+      @include mobile {
+        text-align: center;
+        right: 0;
+        padding-inline: 25px;
+        width: auto;
+      }
+    }
+
+    &Top {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 16px;
+      padding-inline: 30px;
+      padding-block: 15px;
+      color: white;
+      font-weight: 400;
+      font-size: 40px;
+      margin-block-end: unset;
+
+      @include mobile {
+        font-size: 30px;
+      }
+    }
+
+    &Bottom {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 16px;
+      padding-inline: 25px;
+      padding-block: 15px;
+      color: white;
+      font-size: 20px;
+      width: 80%;
+      max-width: 600px;
+
+      @include mobile {
+        width: auto;
+      }
+    }
+  }
+}
